@@ -11,6 +11,7 @@ import ProductDetail from './Pages/ProductDetail'
 import Cart from './Pages/Cart'
 import Favorites from './Pages/Favorites'
 
+
 function App() {
   return (
     <div className="container mx-auto">

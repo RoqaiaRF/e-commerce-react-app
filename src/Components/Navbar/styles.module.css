@@ -7,13 +7,13 @@
   z-10
 }
 
-.logo {
+/* .logo {
   @apply
   flex
   items-center
   flex-shrink-0	
-}
-
+} */
+/* 
 .logo .link {
   @apply 
   font-semibold 
@@ -21,7 +21,7 @@
   tracking-tight
   flex
   flex-row
-}
+} */
 
 .categoryNav {
   @apply
@@ -78,7 +78,7 @@
   font-medium 
   flex 
 }
-
+/* 
 .logoBox {
   @apply 
   bg-gradient-to-b 
@@ -88,7 +88,7 @@
   w-[5.6rem] 
   h-10 
   rounded-md
-}
+} */
 
 .disclosurePanel {
   @apply 

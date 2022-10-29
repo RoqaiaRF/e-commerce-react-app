@@ -9,11 +9,11 @@ import styles from "./styles.module.css";
 
 const ProductDetail = () => {
   const { addToCart, items } = useCart();
-  const { addToFavorite, favoriteItems } = useFavorite();
+  // const { addToFavorite, favoriteItems } = useFavorite();
   const { product, loading, setProductID } = useProduct();
 
   const findCartItem = items.find((item) => item.id === product.id);
-  const findFavoriteItem = favoriteItems.find((item) => item.id === product.id);
+  // const findFavoriteItem = favoriteItems.find((item) => item.id === product.id);
 
   const { product_id } = useParams();
 
@@ -88,8 +88,8 @@ const ProductDetail = () => {
                       </button>
                     </div>
                   </div>
-                  <div className="block my-auto">
-                    <button
+                  {/* <div className="block my-auto">
+                   <button
                       className={
                         !findFavoriteItem
                           ? styles.favButton
@@ -100,8 +100,8 @@ const ProductDetail = () => {
                       }}
                     >
                       <HeartIcon className={styles.heartIcon} />
-                    </button>
-                  </div>
+                    </button> 
+                  </div> */}
                 </div>
               </div>
             </div>

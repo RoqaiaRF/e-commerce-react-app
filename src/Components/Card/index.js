@@ -13,7 +13,7 @@ const Card = ({
   return (
     <div key={`${item.id}-item`} className={styles.card} title={item.title}>
       <div className={styles.cardLink}>
-        <button
+        {/* <button
           className={
             !findFavoriteItem ? styles.favButton : styles.removeFavButton
           }
@@ -22,7 +22,7 @@ const Card = ({
           }}
         >
           <HeartIcon className={styles.heartIcon} />
-        </button>
+        </button> */}
         <Link to={`/product/${item.id}`}>
           <div className={styles.cardHeader}>
             <img className={styles.cardImg} src={item.image} alt="" />

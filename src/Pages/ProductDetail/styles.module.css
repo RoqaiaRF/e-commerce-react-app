@@ -4,7 +4,7 @@
   tracking-widest 
   mt-4
   mb-2 
-  hover:text-blue-600
+  hover:text-pink-600
 }
 
 .image {
@@ -53,11 +53,11 @@
   shadow-zinc-900/10
   px-10
   py-2 
-  bg-blue-600
+  bg-pink-600
   text-white
   text-sm
   hover:bg-gradient-to-b 
-  hover:bg-yellow-300
+  hover:bg-yellow-600
 }
 
 .removeButton {
@@ -73,7 +73,7 @@
   bg-red-600
   text-sm 
   text-white
-  hover:bg-yellow-300
+  hover:bg-yellow-600
 }
 
 .shoppingCartIcon {
@@ -132,7 +132,7 @@
 
 .starIcon {
   @apply
-  text-yellow-300 
+  text-yellow-600 
 }
 
 .emptyStarIcon {
