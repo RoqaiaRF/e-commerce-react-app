@@ -1,12 +1,11 @@
-
  const  allproducts = [
     {
         "id": 1,
         "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
         "price": 109.95,
-        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-        "category": "men's clothing",
-        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "description": ``,
+        "category": "ساعات",
+        "image": "https://i.ibb.co/t4kMQfL/whitewatch.jpg",
         "rating": {
             "rate": 3.9,
             "count": 120
@@ -14,11 +13,45 @@
     },
     {
         "id": 2,
-        "title": "Mens Casual Premium Slim Fit T-Shirts ",
+        "title": "سماعة TWS ",
         "price": 22.3,
-        "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-        "category": "men's clothing",
-        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "description": `🔥سماعه TWS, احدث اصدار 2022 و بسعر تحدي !!🔥
+        \n \n \n \n \n \n \n \n \n
+                
+        ✅مكفوله و مضمونة لعام عام 💯✅
+        \n
+        💢الرجاء عدم مقارنة السعر بمنتج أخرى مثل M9 أو F9 او M15 او A17 او S320....ألخ
+        ال TWS الأحدث و الأقوى بكل السلسلة, بطاريتها و صوتها و فترة الاستخدام و الخامة أعلى بكثير.💢
+        
+        
+        💠سماعه TWS أعلى جودة, الاحدث بالسلسة اصدار 2022، سماعة و باوربانك 5000 ملي امبير بنفس الوقت، تخيل السماعة بتعقد معك من 8 إلى 9ساعات بشحنه الواحدة وغير هيك الباوربانك بشحنها 45 مره, وممكن تشحن التلفون باستخدامه , يعني العلبة وهي مشحونة بتكفيك لأكثر من 290 ساعه !!
+        مميزات_المنتج :
+         تعمل على هواتف الأندرويد و الأيفون ( تعمل على جميع الأجهزة) و الساعات الذكية.
+         مايكروفون بكل سماعة (صوتك مش سامعة انساها)
+        الجيل جديد من HIFI Heavy Bass 130AB و الأنقى للموسيقى.
+        تعمل باللمس.
+        أحدث إصدار بلوتوث 5.2 ( #لاتأخيربصوت_الألعاب).
+        يمكن الرد على المكالمات و تغير الأغنية و التحكم بالصوت عن طريق لمسها مباشرة.
+        مقاومة للماء و التعرق بشكل كامل و الاتربة IP69.
+        ثبات عالي بالأذن لتناسب الرياضات.
+        مزودة بمانع الضوضاء الخارجية.
+        إمكانية استخدامها لشحن الهاتف كـ POWER BANK ب سعة 5000 مل أمبير !!
+        تقنيه الصوت محيط 9D عالية الجودة #مناسبهجداللألعاب. 
+        تصميم Groove الجميل، و يمكن استخدامه كحاملة للهاتف المحمول.
+        شاشة رقمية ذكية لمعرفه مستوى شحن.
+        تعمل عن بعد 18 متر الى 25متر عن الهاتف .
+        مصنوعة من مادتي ABS+PVC لتحقيق أعلى متانة و اناقة.
+        
+        ✅ الصورة مطابقة للواقع 100%
+        ✅ صندوق السماعة مزود بشاشة ديجيتال
+        
+        🔥 فقط بسعر 69 شيكل لفترة محدودة !! 🔥
+        
+
+        
+        🚘متوفر خدمة التوصيل لمناطق الضفه و القدس و الداخل🚘`,
+        "category": "سماعات",
+        "image": "https://i.ibb.co/vvSvDm9/headphone2.jpg",
         "rating": {
             "rate": 4.1,
             "count": 259
@@ -26,11 +59,30 @@
     },
     {
         "id": 3,
-        "title": "Mens Cotton Jacket",
-        "price": 55.99,
-        "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
-        "category": "men's clothing",
-        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "title": "مشط حراري",
+        "price": 59.99,
+        "description": `
+ 
+        مشط حراري لتصفيف شعر الرأس واللحيه بكل سهوله بديل _السشوار والستريت (للشباب والفتيات).
+      
+         🚘  خدمه التوصيل متاحه لجميع المحافظات مجانا  🚘
+        
+        مميزاته : ❤
+        صناعه كوريه اصلي. 
+        كفاله سنه. 
+        مناسب للشباب والفتيات لجميع انواع الشعر مهما كان. 
+        سهل الإستخدام. 
+        تسريحه وأناقه وشعر جذاب  بأقل من دقيقتين. 
+        يساعد في فرد  و ترطيب الشعر وتنعيمه،وحمايته  من التلف والتساقط.
+        تصميم رائع وأنيق مناسب لحجم اليد. 
+        مدة الوصول للحرارة المثالية هي عده ثواني فقط. 
+        آمن وفعال توجد طبقة حماية ، لحماية الشعر والجلد من الإحتراق. 
+        درجه حراره متعدده، خفيفه  وسط وعاليه تصل إلى 950F بثواني/60Hz200V
+        
+
+        للطلب الرجاء التواصل على الواتس`,
+        "category": "مشط حراري",
+        "image": "https://i.ibb.co/TKxsGpc/makwa1.jpg",
         "rating": {
             "rate": 4.7,
             "count": 500
@@ -243,3 +295,27 @@
 ]
 
 export default allproducts;
+
+
+
+/*
+
+<img src="https://i.ibb.co/B63Q3hB/headphone8.jpg" alt="headphone8" border="0">
+<img src="https://i.ibb.co/9VKCPZ7/headphone7.jpg" alt="headphone7" border="0">
+<img src="https://i.ibb.co/2h0kGcy/headphone6.jpg" alt="headphone6" border="0">
+<img src="https://i.ibb.co/sR1Mv4m/headphone5.jpg" alt="headphone5" border="0">
+<img src="https://i.ibb.co/s18ChP9/headphone4.jpg" alt="headphone4" border="0">
+<img src="https://i.ibb.co/B63Q3hB/headphone8.jpg" alt="headphone8" border="0">
+<img src="https://i.ibb.co/vvSvDm9/headphone2.jpg" alt="headphone2" border="0">
+<img src="https://i.ibb.co/DDtw9cx/powerbank.jpg" alt="powerbank" border="0">
+<img src="https://i.ibb.co/9VKCPZ7/headphone7.jpg" alt="headphone7" border="0">
+<img src="https://i.ibb.co/MhY2fbg/makwa2.jpg" alt="makwa2" border="0">
+<img src="https://i.ibb.co/TKxsGpc/makwa1.jpg" alt="makwa1" border="0">
+<img src="https://i.ibb.co/MSnHSdJ/pinkwatch2.jpg" alt="pinkwatch2" border="0">
+<img src="https://i.ibb.co/D9MPNsj/smartwatch.jpg" alt="smartwatch" border="0">
+<img src="https://i.ibb.co/t4kMQfL/whitewatch.jpg" alt="whitewatch" border="0">
+<img src="https://i.ibb.co/TB1pmwY/backbluewatch.jpg" alt="backbluewatch" border="0">
+<img src="https://i.ibb.co/b1nMJKj/blackwatch.jpg" alt="blackwatch" border="0">
+<img src="https://i.ibb.co/SsFrKwZ/twowatch.jpg" alt="twowatch" border="0">
+<img src="https://i.ibb.co/J2NyS7J/pink-watch.jpg" alt="pink-watch" border="0">
+ */

@@ -22,7 +22,7 @@ export default function SliderComponent() {
                 }}
                 pagination={{
                     clickable: true,
-                }}
+                }}                            
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"

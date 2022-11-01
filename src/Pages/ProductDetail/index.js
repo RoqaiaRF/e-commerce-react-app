@@ -6,7 +6,7 @@ import { useProduct } from "../../Context/ProductContext";
 import { useCart } from "../../Context/CartContext";
 import { useFavorite } from "../../Context/FavoriteContext";
 import styles from "./styles.module.css";
-
+import WhatssappIcon from "../../Components/WhatssappIcon"
 const ProductDetail = () => {
   const { addToCart, items } = useCart();
   // const { addToFavorite, favoriteItems } = useFavorite();
@@ -32,9 +32,7 @@ const ProductDetail = () => {
                 src={product.image}
               />
               <div className="lg:w-2/3 w-full lg:pl-10 lg:py-6 my-auto">
-                <h2 className={styles.brand}>
-                  BRAND
-                </h2>
+              
                 <h1 className="text-gray-900 text-2xl font-bold tracking-tight mb-1">
                   {product.title}
                 </h1>
@@ -64,9 +62,10 @@ const ProductDetail = () => {
                 </p>
                 <div className="flex">
                   <div className="my-auto">
-                    <span className="font-extralight text-2xl inline-block align-middle mt-2 my-auto">
-                      $ {product.price}
-                    </span>
+                  <span>شيكل </span>
+                   <span className="font-extralight text-2xl inline-block align-middle mt-2 my-auto">
+                  {product.price} 
+                    </span>  
                   </div>
                   <div className="block ml-auto my-auto mt-0">
                     {" "}
@@ -85,9 +84,15 @@ const ProductDetail = () => {
                             {findCartItem ? "Remove from cart" : "Add to Cart"}
                           </span>
                         </div>
-                      </button>
+                      </button>   
+                                     <WhatssappIcon />
+
                     </div>
                   </div>
+
+     
+
+
                   {/* <div className="block my-auto">
                    <button
                       className={

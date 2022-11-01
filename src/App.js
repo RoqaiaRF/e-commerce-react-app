@@ -10,10 +10,12 @@ import Container from './Components/Container'
 import ProductDetail from './Pages/ProductDetail'
 import Cart from './Pages/Cart'
 import Favorites from './Pages/Favorites'
-
+// import Footer  from './Components/Footer'
 
 function App() {
   return (
+    <>
+    
     <div className="container mx-auto">
       <Navbar />
       <Container>
@@ -29,6 +31,10 @@ function App() {
         </Routes>
       </Container>
     </div>
+    <div>
+    {/* <Footer /> */}
+    </div>
+    </>
   )
 }
 

@@ -139,7 +139,7 @@ const Navbar = () => {
             to="/"
             onClick={() => setCategory("")}
           >
-            <h1 className="truncate">All</h1>
+            <h1 className="truncate">الجميع</h1>
           </Link>
         </div>
         {categories &&

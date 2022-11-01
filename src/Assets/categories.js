@@ -1,3 +1,3 @@
-const categories = [ "Electronics", "Jewelery", "Men's Clothing", "Women's Clothing" ];
+const categories = [ "ساعات", "سماعات", "مشط حراري", "أجهزة أخرى" ];
 
 export default categories;

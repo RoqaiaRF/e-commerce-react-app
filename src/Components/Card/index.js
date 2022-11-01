@@ -32,8 +32,7 @@ const Card = ({
           <div>
             <p className={styles.cardTitle} title={item.title}>
               <span className={styles.brand} title="Brand">
-                Brand,
-              </span>{" "}
+               </span>{" "}
               {item.title}
             </p>
           </div>
@@ -58,7 +57,7 @@ const Card = ({
           </div>
           <div>
             <div className="my-auto" title={`$${item.price}`}>
-              <span className={styles.priceSub}>$</span>
+              <span className={styles.priceSub}>شيكل</span>
               <span className={styles.priceTop}>{Math.trunc(item.price)}</span>
               {parseInt((item.price % 1).toFixed(2).substring(2)) !== 0 ? (
                 <span className={styles.priceSub}>
@@ -87,6 +86,8 @@ const Card = ({
               </div>
             </button>
           </div>
+
+
         </div>
       </div>
     </div>

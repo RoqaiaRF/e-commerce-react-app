@@ -57,12 +57,12 @@ const Cart = () => {
                       <div className="flex flex-col ml-2 mt-2">
                         <Link to={`/product/${item.id}`}>
                           <h2 className="text-sm title-font text-zinc-900 tracking-widest hover:text-blue-600 mt-2">
-                            Brand
+                            براند
                           </h2>
                           <p className="font-extralight">{item.title}</p>
                         </Link>
                         <p className="mt-auto mb-4 font-extralight text-xl">
-                          $ {item.price}
+                           {item.price} شيكل
                         </p>
                       </div>
                       <div className="flex flex-row ml-auto">
@@ -76,17 +76,17 @@ const Cart = () => {
               );
             })}
           </div>
-          <div className="w-full h-full sm:w-2/2 md:w-2/2 xl:w-1/5 p-4">
+          {/* <div className="w-full h-full sm:w-2/2 md:w-2/2 xl:w-1/5 p-4">
             <div className={styles.bgCart}>
               <div className="flex flex-col p-4">
                 <span className="text-xl mb-4 font-semibold">
                   Order Summary
                 </span>
                 <span className="text-sm my-2 font-extralight flex">
-                  Subtotal <span className="ml-auto font-normal">$ {subtotal}</span>
+                  Subtotal <span className="ml-auto font-normal">شيكل  {subtotal}</span>
                 </span>
                 <span className="text-sm my-2 font-extralight flex">
-                  Shipping Estimate <span className="ml-auto font-normal">$ 5</span>
+                  Shipping Estimate <span className="ml-auto font-normal">شيكل 5 </span>
                 </span>
                 <span className="text-sm my-2 font-extralight flex">
                   Tax Estimate <span className="ml-auto font-normal">$ 5</span>
@@ -96,7 +96,7 @@ const Cart = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       )}
     </div>
