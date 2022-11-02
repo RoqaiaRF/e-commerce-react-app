@@ -23,10 +23,15 @@ const Hero25 = () => {
         <h2 className="text-xl sm:text-3xl font-mulish">Marketplace for</h2>
 
         {/* ::Big Title */}
-        <h1 className="text-5xl sm:text-7xl font-mulish">Fancy Hero 25</h1>
+        <h1 className="text-5xl sm:text-7xl font-mulish">AL-WAHW</h1>
 
         {/* ::Text */}
-        <p className="max-w-lg py-5 font-thin leading-relaxed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti dolores sunt sequi ab repellendus, molestias odit rerum beatae voluptates quidem numquam explicabo non voluptatum accusamus itaque natus eveniet amet veniam.</p>
+        <p className="text-right max-w-lg py-5 font-thin leading-relaxed">
+          منتجات ذكية تجعل من حياتك أكثر راحة وسهولة
+           تسوق الآن واحصل على خصومات هائلة 
+           تسوق أفضل الساعات الذكية من توب ديلز واحصل<br/>
+على خصومات حصرية الآن!
+           </p>
 
         {/* ::Download App */}
         <div className="flex-shrink-0 py-5 flex flex-col sm:flex-row items-center">
