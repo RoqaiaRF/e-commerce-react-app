@@ -34,6 +34,8 @@
   overflow-x-auto
   sm:justify-start
   md:justify-center
+  fixed left-5 right-5 top-5
+  hidden md:flex
 
 }
 

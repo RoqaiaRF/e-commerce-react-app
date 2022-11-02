@@ -1,28 +1,28 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 // import MenuButton from './MenuButton'
-import CartButton from './CartButton'
-import styles from './styles.module.css'
-import { useProduct } from '../../Context/ProductContext'
-import { useAuth } from '../../Context/AuthContext'
-import { Disclosure, } from '@headlessui/react'
-import { MenuIcon, XIcon, LogoutIcon } from '@heroicons/react/outline'
-import NAVIGATION from '../../Config/navbarItemList'
-import logo from "../../Assets/logo.png"
-import HeroImage from "../Hero"
+import CartButton from "./CartButton";
+import styles from "./styles.module.css";
+import { useProduct } from "../../Context/ProductContext";
+import { useAuth } from "../../Context/AuthContext";
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon, LogoutIcon } from "@heroicons/react/outline";
+import NAVIGATION from "../../Config/navbarItemList";
+import logo from "../../Assets/logo.png";
+import HeroImage from "../Hero";
 const Navbar = () => {
-  const { categories, setCategory } = useProduct()
-  const { loggedIn, currentUser, setIsSubmitting, logout } = useAuth()
+  const { categories, setCategory } = useProduct();
+  const { loggedIn, currentUser, setIsSubmitting, logout } = useAuth();
 
   const handleLogout = async () => {
-    setIsSubmitting(true)
+    setIsSubmitting(true);
     try {
-      await logout()
+      await logout();
     } catch {
-      alert("Error")
+      alert("Error");
     }
-    setIsSubmitting(false)
-  }
+    setIsSubmitting(false);
+  };
 
   return (
     <>
@@ -33,18 +33,24 @@ const Navbar = () => {
               <div className="relative flex items-center justify-between h-16">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
-                  {/* <Disclosure.Button className="inline-flex items-center justify-center p-2">
+                  <Disclosure.Button className="inline-flex items-center justify-center p-2">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
                       <XIcon className="block h-9 w-9" aria-hidden="true" />
                     ) : (
                       <MenuIcon className="block h-9 w-9" aria-hidden="true" />
                     )}
-                  </Disclosure.Button> */}
+                  </Disclosure.Button>
                 </div>
                 <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                   <div className={styles.logo}>
-                    <img alt="logo" src={logo} to="/"  width= "150px" height= "75px" />
+                    <img
+                      alt="logo"
+                      src={logo}
+                      to="/"
+                      width="150px"
+                      height="75px"
+                    />
                   </div>
                   <div className="hidden sm:block sm:ml-6"></div>
                 </div>
@@ -60,77 +66,46 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* <Disclosure.Panel className={styles.disclosurePanel}>
+            <Disclosure.Panel className={styles.disclosurePanel}>
               <div>
-                {!loggedIn && NAVIGATION.map(({
-                      id,
-                      name,
-                      link,
-                      icon,
-                      underlined,
-                      loggedIn,
-                      onclick,
-                    }) => (
-                      <Link 
-                        to={link}
-                        onClick={onclick ? onclick : null}
-                        className={`${
-                          !loggedIn || loggedIn === "public" || "hidden"
-                        }`}
-                        key={`${name}-00${id}`}
-                      >
-                      <Disclosure.Button className={`${styles.disclosureButton} ${underlined ? "border-b-2 border-zinc-900/10" : ""}`}>
-                        {icon}
-                        {name}
-                      </Disclosure.Button>
-                      </Link>
-                    ))}
-                    {loggedIn && NAVIGATION.map(({
-                      id,
-                      name,
-                      link,
-                      icon,
-                      underlined,
-                      loggedIn,
-                      onclick,
-                    }) => (
-                      <Link 
-                        to={link}
-                        onClick={onclick ? onclick : null}
-                        className={`${
-                          loggedIn || loggedIn === "public" || "hidden"
-                        }`}
-                        key={`${name}-00${id}`}
-                      >
-                      <Disclosure.Button className={`${styles.disclosureButton} ${underlined ? "border-b-2 border-zinc-900/10" : ""}`}>
-                        {icon}
-                        {name}
-                      </Disclosure.Button>
-                      </Link>
-                    ))}
-                    {loggedIn && (
-                      <Link 
-                      to="/"
-                      onClick={handleLogout}
-                    >
-                    <Disclosure.Button className={styles.disclosureButton}>
-                      <LogoutIcon
-                        className="mr-2 my-auto h-5 w-5"
-                        aria-hidden="true"
-                      />
-                      Logout
-                    </Disclosure.Button>
-                    </Link>
-                    )}
-                
+       
+                {categories &&
+                  categories.map((item, index) => {
+                    return (
+                      <div key={`${item}-${index}`}>
+                        <Link
+                          className={styles.categoryLink}
+                          to={`/${item.toLowerCase()}`}
+                          onClick={() => {
+                            setCategory(item.toLowerCase());
+                          }}
+                        >
+                          <Disclosure.Button className={`${styles.disclosureButton}`}>
+                          <h1 className="truncate">{item}</h1>
+                  </Disclosure.Button>
+                         
+                        </Link>
+                      </div>
+                    );
+                  })}
+
+                <Link
+                  className={styles.categoryLink}
+                  to="/"
+                  onClick={() => setCategory("")}
+                >
+                  <Disclosure.Button className={`${styles.disclosureButton}`}>
+                    الجميع
+                  </Disclosure.Button>
+                </Link>
               </div>
-            </Disclosure.Panel> */}
+            </Disclosure.Panel>
           </>
         )}
       </Disclosure>
       <div className="bg-zinc-900/10 mx-auto h-[1.1px] shadow-sm shadow-zinc-900/10 px-12"></div>
       <div>
-      <HeroImage/>  
+        <HeroImage />
       </div>
       <nav className={styles.categoryNav}>
         <div>
