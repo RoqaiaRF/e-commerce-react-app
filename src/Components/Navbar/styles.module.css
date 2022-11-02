@@ -2,41 +2,25 @@
   @apply
   flex
   justify-between
-  bg-transparent
   p-6
+  bg-white
   z-10
 }
-
-/* .logo {
-  @apply
-  flex
-  items-center
-  flex-shrink-0	
-} */
-/* 
-.logo .link {
-  @apply 
-  font-semibold 
-  text-xl 
-  tracking-tight
-  flex
-  flex-row
-} */
 
 .categoryNav {
   @apply
   flex
   py-2
-  max-w-7xl
   mx-auto
-  bg-transparent
   rounded-lg
   overflow-x-auto
   sm:justify-start
   md:justify-center
-  fixed left-5 right-5 top-5
+  bg-white
+  fixed left-5 right-5 top-0
   hidden md:flex
-
+  w-3/5
+  h-20
 }
 
 .categoryLink {
