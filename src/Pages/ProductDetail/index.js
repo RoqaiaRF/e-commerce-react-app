@@ -33,8 +33,8 @@ const ProductDetail = () => {
               <SimpleImageSlider
                 showNavs="true"
                 showBullets={true}
-                width={416}
-                height={340}
+                width={350}
+                height={400}
                 images={product.images}
                 style={{ margin: '0 auto', marginTop: '50px' }}
               />
