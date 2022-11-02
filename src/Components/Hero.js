@@ -1,6 +1,6 @@
 
 import React from 'react'
-
+import HeroImage from "../Assets/Screenshots/hero10.png"
 
 const Hero25 = () => {
   return (
@@ -8,7 +8,7 @@ const Hero25 = () => {
 
       {/* :HERO IMAGE */}
       <div className="absolute w-full h-full bg-gradient-to-t from-purple-500 to-pink-500" style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 75%)" }}>
-        <img src="https://fancytailwind.com/static/764417c1f2d75b88be8b6abc6cb1fdbd/69f5c/work6.jpg" alt="" className="absolute w-full h-full object-cover object-top opacity-20" />
+        <img src={HeroImage} alt="" className="absolute w-full h-full object-cover object-top opacity-20" />
       </div>
 
       {/* :PRODUCT */}
