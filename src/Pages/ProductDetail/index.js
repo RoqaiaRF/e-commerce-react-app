@@ -6,7 +6,9 @@ import { useProduct } from "../../Context/ProductContext";
 import { useCart } from "../../Context/CartContext";
 import { useFavorite } from "../../Context/FavoriteContext";
 import styles from "./styles.module.css";
-import WhatssappIcon from "../../Components/WhatssappIcon"
+import WhatssappIcon from "../../Components/WhatssappIcon";
+import SimpleImageSlider from "react-simple-image-slider";
+
 const ProductDetail = () => {
   const { addToCart, items } = useCart();
   // const { addToFavorite, favoriteItems } = useFavorite();
@@ -24,76 +26,81 @@ const ProductDetail = () => {
   return (
     <>
       {!loading && product?.id ? (
-          <div className="flex flex-wrap max-w-7xl mx-auto my-4">
-            <div className="w-full sm:w-2/2 md:w-2/2 xl:w-5/5 p-4 flex flex-wrap">
-              <img
-                alt="ecommerce"
-                className={styles.image}
-                src={product.image}
+        <div className="flex flex-wrap max-w-7xl mx-auto my-4">
+          <div className="w-full sm:w-2/2 md:w-2/2 xl:w-5/5 p-4 flex flex-wrap">
+            {/* <img alt="ecommerce" className={styles.image} src={product.image} /> */}
+           
+              <SimpleImageSlider
+                showNavs="true"
+                showBullets={true}
+                width={416}
+                height={340}
+                images={product.images}
+                style={{ margin: '0 auto', marginTop: '50px' }}
               />
-              <div className="lg:w-2/3 w-full lg:pl-10 lg:py-6 my-auto">
-              
-                <h1 className="text-gray-900 text-2xl font-bold tracking-tight mb-1">
-                  {product.title}
-                </h1>
-                <div className={styles.rating} title={product?.rating?.rate}>
-                  {[...Array(Math.round(product?.rating?.rate))].map((e, i) => (
+
+            <div className="lg:w-2/3 w-full lg:pl-10 lg:py-6 my-auto">
+              <h1 className="text-gray-900 text-2xl font-bold tracking-tight mb-1">
+                {product.title}
+              </h1>
+              <div className={styles.rating} title={product?.rating?.rate}>
+                {[...Array(Math.round(product?.rating?.rate))].map((e, i) => (
+                  <StarIcon
+                    key={`star-${i}`}
+                    className={styles.starIcon}
+                    aria-hidden="true"
+                  />
+                ))}
+                {[...Array(5 - Math.round(product?.rating?.rate))].map(
+                  (e, i) => (
                     <StarIcon
-                      key={`star-${i}`}
-                      className={styles.starIcon}
+                      key={`empty-star-${i}`}
+                      className={styles.emptyStarIcon}
                       aria-hidden="true"
                     />
-                  ))}
-                  {[...Array(5 - Math.round(product?.rating?.rate))].map(
-                    (e, i) => (
-                      <StarIcon
-                        key={`empty-star-${i}`}
-                        className={styles.emptyStarIcon}
+                  )
+                )}
+                <p className="text-xs ml-1 font-light mt-0.5">
+                  ({product?.rating?.count})
+                </p>
+              </div>
+              <p
+                className={styles.productDetailText}
+                white-space="pre-line"
+                vertical-align="bottom"
+              >
+                {product.description}
+              </p>
+              <div className="flex">
+                <div className="my-auto">
+                  <span>شيكل </span>
+                  <span className="font-extralight text-2xl inline-block align-middle mt-2 my-auto">
+                    {product.price}
+                  </span>
+                </div>
+                <div className="block ml-auto my-auto mt-0">
+                  {" "}
+                  <div className={styles.addToCart}>
+                    <button
+                      className={styles.addToCartButton}
+                      onClick={() => addToCart(product, findCartItem)}
+                    >
+                      <ShoppingCartIcon
+                        className={styles.shoppingCartIcon}
                         aria-hidden="true"
                       />
-                    )
-                  )}
-                  <p className="text-xs ml-1 font-light mt-0.5">
-                    ({product?.rating?.count})
-                  </p>
+
+                      <div className="flex flex-col self-center">
+                        <span className={styles.buttonText}>
+                          {findCartItem ? "Remove from cart" : "Add to Cart"}
+                        </span>
+                      </div>
+                    </button>
+                    <WhatssappIcon />
+                  </div>
                 </div>
-                <p className={styles.productDetailText}>
-                  {product.description}
-                </p>
-                <div className="flex">
-                  <div className="my-auto">
-                  <span>شيكل </span>
-                   <span className="font-extralight text-2xl inline-block align-middle mt-2 my-auto">
-                  {product.price} 
-                    </span>  
-                  </div>
-                  <div className="block ml-auto my-auto mt-0">
-                    {" "}
-                    <div className={styles.addToCart}>
-                      <button
-                        className={styles.addToCartButton}
-                        onClick={() => addToCart(product, findCartItem)}
-                      >
-                        <ShoppingCartIcon
-                          className={styles.shoppingCartIcon}
-                          aria-hidden="true"
-                        />
 
-                        <div className="flex flex-col self-center">
-                          <span className={styles.buttonText}>
-                            {findCartItem ? "Remove from cart" : "Add to Cart"}
-                          </span>
-                        </div>
-                      </button>   
-                                     <WhatssappIcon />
-
-                    </div>
-                  </div>
-
-     
-
-
-                  {/* <div className="block my-auto">
+                {/* <div className="block my-auto">
                    <button
                       className={
                         !findFavoriteItem
@@ -107,10 +114,10 @@ const ProductDetail = () => {
                       <HeartIcon className={styles.heartIcon} />
                     </button> 
                   </div> */}
-                </div>
               </div>
             </div>
           </div>
+        </div>
       ) : (
         <Spinner />
       )}
