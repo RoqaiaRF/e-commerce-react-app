@@ -81,7 +81,7 @@ const Card = ({
               />
               <div className="flex flex-col self-center">
                 <span className={styles.buttonText}>
-                  {findCartItem ? "Remove from cart" : "Add to Cart"}
+                {findCartItem ? "حذف من السلة" : "اضافة للسلة"}
                 </span>
               </div>
             </button>
