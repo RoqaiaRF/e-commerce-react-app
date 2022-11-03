@@ -11,11 +11,11 @@ import ProductDetail from './Pages/ProductDetail'
 import Cart from './Pages/Cart'
 import Favorites from './Pages/Favorites'
 // import Footer  from './Components/Footer'
+import WhatssappIcon from "./Components/WhatssappIcon";
 
 function App() {
   return (
     <>
-    
     <div className="container mx-auto">
       <Navbar />
       <Container>
@@ -32,6 +32,7 @@ function App() {
       </Container>
     </div>
     <div>
+    <WhatssappIcon/>
     {/* <Footer /> */}
     </div>
     </>

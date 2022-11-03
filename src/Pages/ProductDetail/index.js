@@ -6,8 +6,9 @@ import { useProduct } from "../../Context/ProductContext";
 import { useCart } from "../../Context/CartContext";
 import { useFavorite } from "../../Context/FavoriteContext";
 import styles from "./styles.module.css";
-import WhatssappIcon from "../../Components/WhatssappIcon";
 import SimpleImageSlider from "react-simple-image-slider";
+
+import { AiOutlineWhatsApp } from "react-icons/ai";
 
 const ProductDetail = () => {
   const { addToCart, items } = useCart();
@@ -29,15 +30,15 @@ const ProductDetail = () => {
         <div className="flex flex-wrap max-w-7xl mx-auto my-4">
           <div className="w-full sm:w-2/2 md:w-2/2 xl:w-5/5 p-4 flex flex-wrap">
             {/* <img alt="ecommerce" className={styles.image} src={product.image} /> */}
-           
-              <SimpleImageSlider
-                showNavs="true"
-                showBullets={true}
-                width={350}
-                height={400}
-                images={product.images}
-                style={{ margin: '0 auto', marginTop: '50px' }}
-              />
+
+            <SimpleImageSlider
+              showNavs="true"
+              showBullets={true}
+              width={350}
+              height={400}
+              images={product.images}
+              style={{ margin: "0 auto", marginTop: "50px" }}
+            />
 
             <div className="lg:w-2/3 w-full lg:pl-10 lg:py-6 my-auto">
               <h1 className="text-gray-900 text-2xl font-bold tracking-tight mb-1">
@@ -71,12 +72,36 @@ const ProductDetail = () => {
               >
                 {product.description}
               </p>
-              <div className="flex">
+              <div className="flex-col">
                 <div className="my-auto">
                   <span>شيكل </span>
                   <span className="font-extralight text-2xl inline-block align-middle mt-2 my-auto">
                     {product.price}
                   </span>
+                </div>
+                <div className="block ml-auto my-auto mt-0">
+                    {/* زر الطلب بالواتساب */}
+                    <a
+                      aria-label="ارسل طلبك بالواتساب<"
+                      href={
+                        "https://wa.me/962780135849?text=" +
+                        " مرحبا أرغب بشراء " +
+                        encodeURIComponent(product.title)
+                      }
+                    >
+                      <button className={styles.whatssappButton}>
+
+                        <div className="flex flex-col self-center"></div>
+                        <span className={styles.buttonText}>
+                          {" "}
+                          أرسل طلبك بالواتساب 
+                        </span>
+                        <AiOutlineWhatsApp/>
+
+                      </button>
+
+                      {/* <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.png" />  */}
+                    </a>
                 </div>
                 <div className="block ml-auto my-auto mt-0">
                   {" "}
@@ -85,20 +110,22 @@ const ProductDetail = () => {
                       className={styles.addToCartButton}
                       onClick={() => addToCart(product, findCartItem)}
                     >
-                      <ShoppingCartIcon
-                        className={styles.shoppingCartIcon}
-                        aria-hidden="true"
-                      />
+                 
 
                       <div className="flex flex-col self-center">
                         <span className={styles.buttonText}>
                           {findCartItem ? "Remove from cart" : "Add to Cart"}
                         </span>
                       </div>
+                      <ShoppingCartIcon
+                        className={styles.shoppingCartIcon}
+                        aria-hidden="true"
+                      />
                     </button>
-                    <WhatssappIcon />
                   </div>
                 </div>
+
+            
 
                 {/* <div className="block my-auto">
                    <button
