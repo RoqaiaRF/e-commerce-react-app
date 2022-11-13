@@ -155,6 +155,17 @@
         "images":[
             { url: "https://i.ibb.co/TKxsGpc/makwa1.jpg" },
             { url: "https://i.ibb.co/MhY2fbg/makwa2.jpg" },
+            { url: "https://i.ibb.co/g6j60xh/71nf-kg0lrl-sl1500-1000x1000.webp" },
+            { url: "https://i.ibb.co/616SrJW/416f-N0-Enql-L-SY450.jpg" },
+            { url: "https://i.ibb.co/vQ6C4qt/b2f1a9fc080b57649a5eca9e2ef6a48a.jpg" },
+            { url: "https://i.ibb.co/vBnPCs5/c06bd372-b050-4568-b7e8-3f864e02e7d7.jpg" },
+            { url: "https://i.ibb.co/mbZ3s4m/e68ba803-6e17-40bd-a084-687211fa1896.jpg" },
+            { url: "https://i.ibb.co/8gm6Pkw/fe304ada59507634bd9209d2d95b7186.jpg" },
+            { url: "https://i.ibb.co/fv9PZtN/H1ceb1dc9b1f9432ea6002936fba6bccc-U.jpg" },
+            { url: "https://i.ibb.co/3vLPC6s/Hbbe090be1f024bdca0c9cc916c6efe7f-C.jpg" },
+            { url: "https://i.ibb.co/N2kj8jQ/s-l1600.jpg" },
+            { url: "https://i.ibb.co/9pzFhHR/styler-v2-1000x1000.webp" },
+            { url: "https://i.ibb.co/7RrsqqV/First-Frame.png" }
       
           ],
         "rating": {
@@ -169,7 +180,22 @@ export default allproducts;
 
 
 /*
+مشط حراري
 
+https://i.ibb.co/g6j60xh/71nf-kg0lrl-sl1500-1000x1000.webp
+https://i.ibb.co/616SrJW/416f-N0-Enql-L-SY450.jpg
+https://i.ibb.co/vQ6C4qt/b2f1a9fc080b57649a5eca9e2ef6a48a.jpg
+https://i.ibb.co/vBnPCs5/c06bd372-b050-4568-b7e8-3f864e02e7d7.jpg
+https://i.ibb.co/mbZ3s4m/e68ba803-6e17-40bd-a084-687211fa1896.jpg
+https://i.ibb.co/8gm6Pkw/fe304ada59507634bd9209d2d95b7186.jpg
+https://i.ibb.co/fv9PZtN/H1ceb1dc9b1f9432ea6002936fba6bccc-U.jpg
+https://i.ibb.co/3vLPC6s/Hbbe090be1f024bdca0c9cc916c6efe7f-C.jpg
+https://i.ibb.co/N2kj8jQ/s-l1600.jpg
+https://i.ibb.co/9pzFhHR/styler-v2-1000x1000.webp
+https://i.ibb.co/7RrsqqV/First-Frame.png
+
+
+*******************
 // <img src="https://i.ibb.co/B63Q3hB/headphone8.jpg" alt="headphone8" border="0">
 // <img src="https://i.ibb.co/9VKCPZ7/headphone7.jpg" alt="headphone7" border="0">
 // <img src="https://i.ibb.co/2h0kGcy/headphone6.jpg" alt="headphone6" border="0">
