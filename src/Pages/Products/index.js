@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import { useProduct } from "../../Context/ProductContext";
+import * as ProductContext from "../../Context/ProductContext";
 import styles from "./styles.module.css";
 import Spinner from "../../Components/Spinner";
 import { useParams } from "react-router-dom";
@@ -10,7 +10,7 @@ const Products = () => {
   const {addToCart, items} = useCart()
   // const {addToFavorite, favoriteItems} = useFavorite()
 
-  const { productList, loading, setProductID, setCategory } = useProduct();
+  const { productList, loading, setProductID, setCategory } = ProductContext.useProduct();
   
   const {category_id} = useParams()
 

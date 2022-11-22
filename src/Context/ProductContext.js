@@ -62,7 +62,6 @@ export const ProductProvider = ({ children }) => {
     setCategory,
     loading,
   };
-  // console.log("productID", productID)
   return (
     <ProductContext.Provider value={values}>{children}</ProductContext.Provider>
   );

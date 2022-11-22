@@ -39,12 +39,15 @@ const ProductDetail = () => {
               images={product.images}
               style={{ margin: "0 auto", marginTop: "50px" }}
             />
+            
 
             <div className="lg:w-2/3 w-full lg:pl-10 lg:py-6 my-auto">
+              
               <h1 className="text-gray-900 text-2xl font-bold tracking-tight mb-1">
                 {product.title}
               </h1>
               <div className={styles.rating} title={product?.rating?.rate}>
+                
                 {[...Array(Math.round(product?.rating?.rate))].map((e, i) => (
                   <StarIcon
                     key={`star-${i}`}

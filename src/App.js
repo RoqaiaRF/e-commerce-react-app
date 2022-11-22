@@ -17,7 +17,7 @@ function App() {
   return (
     <>
     <div className="container mx-auto">
-      <Navbar />
+     <Navbar/> 
       <Container>
         <Routes>
           <Route path="/" exact element={<Products />} />

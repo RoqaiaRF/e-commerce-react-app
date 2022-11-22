@@ -26,7 +26,7 @@ const MenuButton = () => {
   return (
     <div className="justify-content-center mx-auto text-center">
       {!loggedIn && (
-        <Menu as="div" className={styles.menu}>
+        <Menu as="div" className={styles.mcvenu}>
           <div>
             <Menu.Button className={styles.menuButton}>
               <UserCircleIcon

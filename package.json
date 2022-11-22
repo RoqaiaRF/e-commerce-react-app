@@ -22,6 +22,7 @@
     "react-simple-image-slider": "^2.4.1",
     "styled-components": "^5.3.6",
     "swiper": "^8.4.4",
+    "tiktok-pixel": "^2.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -105,7 +105,8 @@ const Navbar = () => {
       </Disclosure>
       <div className="bg-zinc-900/10 mx-auto h-[1.1px] shadow-sm shadow-zinc-900/10 px-12"></div>
       <div>
-        <HeroImage />
+        {//TODO: FIX this
+        /* <HeroImage /> */} 
       </div>
       <nav className={styles.categoryNav}>
         <div>
