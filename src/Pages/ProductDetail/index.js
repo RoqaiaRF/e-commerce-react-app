@@ -107,7 +107,7 @@ const ProductDetail = () => {
                     </a>
                 </div>
                 <div className="block ml-auto my-auto mt-0">
-                  {" "}
+                  {/* {" "}
                   <div className={styles.addToCart}>
                     <button
                       className={styles.addToCartButton}
@@ -125,7 +125,7 @@ const ProductDetail = () => {
                         aria-hidden="true"
                       />
                     </button>
-                  </div>
+                  </div> */}
                 </div>
 
             
