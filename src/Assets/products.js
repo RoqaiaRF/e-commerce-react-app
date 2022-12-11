@@ -122,7 +122,7 @@ const  allproducts = [
       🔥 🔥 🔥    عرض خاص : 3 سماعات  ب 170 شيكل فقط  🔥 🔥 🔥 
       🚘متوفر خدمة التوصيل لمناطق الضفه و القدس و الداخل🚘`,
       "category": "سماعات",
-      "image": "https://i.ibb.co/vvSvDm9/headphone2.jpg",
+      "image": "https://i.ibb.co/B63Q3hB/headphone8.jpg",
       "images":[
           { url: "https://i.ibb.co/vvSvDm9/headphone2.jpg" },
           { url: "https://i.ibb.co/B63Q3hB/headphone8.jpg" },
