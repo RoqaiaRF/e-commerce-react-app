@@ -68,6 +68,78 @@ const ProductDetail = () => {
                   ({product?.rating?.count})
                 </p>
               </div>
+              <div className="flex-col">
+                <div className="my-auto">
+                  <span>شيكل </span>
+                  <span className="font-extralight text-2xl inline-block align-middle mt-2 my-auto">
+                    {product.price}
+                  </span>
+                </div>
+                <div className="block ml-auto my-auto mt-0">
+                    {/* زر الطلب بالواتساب */}
+                    <a
+                      aria-label="ارسل طلبك بالواتساب<"
+                      href={
+                       "https://api.whatsapp.com/send/?phone=962780135849" +"&text=" +
+                      " مرحبا أرغب بشراء " +
+                      encodeURIComponent(product.title)+ "+&type=phone_number&app_absent=0"
+                      
+                      
+                      }
+                    >
+                      <button className={styles.whatssappButton}>
+
+                        <div className="flex flex-col self-center"></div>
+                        <span className={styles.buttonText}>
+                          {" "}
+                          أرسل طلبك بالواتساب 
+                        </span>
+                        <AiOutlineWhatsApp/>
+
+                      </button>
+
+                      {/* <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.png" />  */}
+                    </a>
+                </div>
+                <div className="block ml-auto my-auto mt-0">
+                  {/* {" "}
+                  <div className={styles.addToCart}>
+                    <button
+                      className={styles.addToCartButton}
+                      onClick={() => addToCart(product, findCartItem)}
+                    >
+                 
+
+                      <div className="flex flex-col self-center">
+                        <span className={styles.buttonText}>
+                          {findCartItem ? "حذف من السلة" : "اضافة للسلة"}
+                        </span>
+                      </div>
+                      <ShoppingCartIcon
+                        className={styles.shoppingCartIcon}
+                        aria-hidden="true"
+                      />
+                    </button>
+                  </div> */}
+                </div>
+
+            
+
+                {/* <div className="block my-auto">
+                   <button
+                      className={
+                        !findFavoriteItem
+                          ? styles.favButton
+                          : styles.removeFavButton
+                      }
+                      onClick={() => {
+                        addToFavorite(product, findFavoriteItem);
+                      }}
+                    >
+                      <HeartIcon className={styles.heartIcon} />
+                    </button> 
+                  </div> */}
+              </div>
               <p
                 className={styles.productDetailText}
                 white-space="pre-line"
@@ -148,6 +220,7 @@ const ProductDetail = () => {
                   </div> */}
               </div>
             </div>
+            
           </div>
         </div>
       ) : (
