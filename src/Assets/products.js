@@ -124,13 +124,14 @@ const  allproducts = [
       "category": "سماعات",
       "image": "https://i.ibb.co/B63Q3hB/headphone8.jpg",
       "images":[
+        { url: "https://i.ibb.co/B63Q3hB/headphone8.jpg"  },
           { url: "https://i.ibb.co/vvSvDm9/headphone2.jpg" },
           { url: "https://i.ibb.co/B63Q3hB/headphone8.jpg" },
           { url: "https://i.ibb.co/9VKCPZ7/headphone7.jpg" },
           { url: "https://i.ibb.co/2h0kGcy/headphone6.jpg" },
           { url: "https://i.ibb.co/sR1Mv4m/headphone5.jpg" },
           { url:"https://i.ibb.co/s18ChP9/headphone4.jpg"  },
-          { url: "https://i.ibb.co/B63Q3hB/headphone8.jpg"  },
+        
          { url: "https://i.ibb.co/DDtw9cx/powerbank.jpg" },
 
         ],
