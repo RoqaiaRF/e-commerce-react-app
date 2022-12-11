@@ -12,8 +12,19 @@ import Cart from './Pages/Cart'
 import Favorites from './Pages/Favorites'
 // import Footer  from './Components/Footer'
 import WhatssappIcon from "./Components/WhatssappIcon";
+import TiktokPixel from 'tiktok-pixel';
 
 function App() {
+
+
+  const options = {
+    debug: true, // enable logs
+  };
+  
+  TiktokPixel.init('CEAV0TRC77U8BHMEUCPG', options);
+  TiktokPixel.pageView(); // For tracking page view
+
+
   return (
     <>
     <div className="container mx-auto">
