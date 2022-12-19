@@ -1,9 +1,9 @@
 const  allproducts = [
   {
       "id": 1,
-      "title": "الساعه الذكيه watch7",
+      "title": "الساعه الذكيه watch8",
       "price": 79,
-      "description": `🔥الساعه الذكيه watch7 احدث اصدار 2022الجيل السابع الأصلية🔥
+      "description": `🔥الساعه الذكيه watch8 احدث اصدار 2022الجيل السابع الأصلية🔥
       🔥 مع كستك و لزقة هدية 🔥
       ⏰ حرق سعر فقط 79  شيكل لفترة محدودة ⏰
       🔥 🔥 🔥    عرض خاص : 3 ساعات ب 210 شيكل فقط  🔥 🔥 🔥 
@@ -51,34 +51,22 @@ const  allproducts = [
       `,
       "category": "ساعات",
       "images":[
-         
+          { url: "https://s.alicdn.com/@sc04/kf/Udd5d4ad0f6f34d97b652c49e4d2fa05f6.jpg" },
         
-        
-        /*
-        
-        <img src="https://i.ibb.co/F5jHwJ6/3o-AYDfc8-Or-Ue-JMYEzqp8k-Fp-C5-Xf-Uqbq-Ug8-XPh-Wou.jpg" alt="3o-AYDfc8-Or-Ue-JMYEzqp8k-Fp-C5-Xf-Uqbq-Ug8-XPh-Wou" border="0">
-<img src="https://i.ibb.co/nkLMC11/AMSMPWCaw-Ov-Vog-Gz1-Gej9-Bz4-Cx-Ek7-K3-DBXq-Mt9-Cf-lg.jpg" alt="AMSMPWCaw-Ov-Vog-Gz1-Gej9-Bz4-Cx-Ek7-K3-DBXq-Mt9-Cf-lg" border="0">
-<img src="https://i.ibb.co/8nZwyC9/photo-2022-12-08-18-00-33.jpg" alt="photo-2022-12-08-18-00-33" border="0">
-<img src="https://i.ibb.co/0Y7GQRB/photo-2022-12-08-18-01-03.jpg" alt="photo-2022-12-08-18-01-03" border="0">
-<img src="https://i.ibb.co/hYPJsYq/photo-2022-12-08-18-01-40.jpg" alt="photo-2022-12-08-18-01-40" border="0">
-        
-        */
-          { url: "https://i.ibb.co/TB1pmwY/backbluewatch.jpg" },
-        
-            { url: "https://i.ibb.co/F5jHwJ6/3o-AYDfc8-Or-Ue-JMYEzqp8k-Fp-C5-Xf-Uqbq-Ug8-XPh-Wou.jpg" },
-            { url: "https://i.ibb.co/nkLMC11/AMSMPWCaw-Ov-Vog-Gz1-Gej9-Bz4-Cx-Ek7-K3-DBXq-Mt9-Cf-lg.jpg" },
-            { url: "https://i.ibb.co/8nZwyC9/photo-2022-12-08-18-00-33.jpg"  },
-            { url: "https://i.ibb.co/0Y7GQRB/photo-2022-12-08-18-01-03.jpg" },
-                  { url:"https://i.ibb.co/hYPJsYq/photo-2022-12-08-18-01-40.jpg" },
+          { url: "https://m.media-amazon.com/images/I/71v6Aa7Bm4L._AC_SX679_.jpg" },
+          { url: "https://ae01.alicdn.com/kf/H862121e221f24cccaf0ba66083acde04z/2021-Smart-Watches-IWO-W26-Men-Women-Smartwatch-Bluetooth-Call-ECG-Heart-Rate-Monitor-Sports-Fitness.jpg"  },
+          { url: "https://5.imimg.com/data5/SELLER/Default/2021/9/PQ/QD/BT/68248891/w26-smart-watch-with-scroll-working-many-more-exciting-watch-faces-1000x1000.jpg" },
+          { url:"https://cdn.mos.cms.futurecdn.net/24gnNuzE4ZzsBAtMityAuH.jpg" },
 
-          { url: "https://i.ibb.co/b1nMJKj/blackwatch.jpg" },
-          { url: "https://i.ibb.co/t4kMQfL/whitewatch.jpg"},
-          { url: "https://i.ibb.co/J2NyS7J/pink-watch.jpg"},
-        { url: "https://i.ibb.co/nkLMC11/AMSMPWCaw-Ov-Vog-Gz1-Gej9-Bz4-Cx-Ek7-K3-DBXq-Mt9-Cf-lg.jpg" },
-        
-        ],
-        "image": "https://i.ibb.co/t4kMQfL/whitewatch.jpg",
+        { url: "https://i0.wp.com/mucuruzi.com/wp-content/uploads/2022/03/T500-PLUS-1.png?ssl=1" },
+        { url: "https://i.ibb.co/t4kMQfL/whitewatch.jpg"},
+        { url: "https://i.ibb.co/J2NyS7J/pink-watch.jpg"},
       
+          ],
+
+  
+          "image": "https://ae01.alicdn.com/kf/H862121e221f24cccaf0ba66083acde04z/2021-Smart-Watches-IWO-W26-Men-Women-Smartwatch-Bluetooth-Call-ECG-Heart-Rate-Monitor-Sports-Fitness.jpg",
+                  
       "rating": {
           "rate": 3.9,
           "count": 120
@@ -122,20 +110,19 @@ const  allproducts = [
       🔥 🔥 🔥    عرض خاص : 3 سماعات  ب 170 شيكل فقط  🔥 🔥 🔥 
       🚘متوفر خدمة التوصيل لمناطق الضفه و القدس و الداخل🚘`,
       "category": "سماعات",
-      "image": "https://i.ibb.co/B63Q3hB/headphone8.jpg",
-      "images":[
-        { url: "https://i.ibb.co/B63Q3hB/headphone8.jpg"  },
-          
-        
-          { url: "https://i.ibb.co/B63Q3hB/headphone8.jpg" },
-          { url: "https://i.ibb.co/9VKCPZ7/headphone7.jpg" },
-          { url: "https://i.ibb.co/2h0kGcy/headphone6.jpg" },
-          { url: "https://i.ibb.co/sR1Mv4m/headphone5.jpg" },
-          { url:"https://i.ibb.co/s18ChP9/headphone4.jpg"  },
-        
-         { url: "https://i.ibb.co/DDtw9cx/powerbank.jpg" },
+      "image": "https://i0.wp.com/alyazon.com/wp-content/uploads/2022/04/798563.jpg?fit=1601%2C1601&ssl=1",
+        "images":[
+          { url: "https://i0.wp.com/alyazon.com/wp-content/uploads/2022/04/798563.jpg?fit=1601%2C1601&ssl=1" },
 
-        ],
+          { url: "https://i.ibb.co/2h0kGcy/headphone6.jpg" },
+            { url: "https://www.dhresource.com/0x0/f2/albu/g15/M01/1B/F5/rBVa3WIYmJaAFAb1AAn7lW3tdwE731.jpg" },
+            { url: "https://i0.wp.com/alyazon.com/wp-content/uploads/2022/04/798558.jpg?fit=1601%2C1601&ssl=1" },
+            { url: "https://i0.wp.com/alyazon.com/wp-content/uploads/2022/04/798570.jpg?fit=2160%2C2160&ssl=1" },
+            { url:"https://i0.wp.com/alyazon.com/wp-content/uploads/2022/04/798547-1.jpg?fit=800%2C800&ssl=1"  },
+            { url: "https://image.made-in-china.com/2f0j00UbYicqTtVnoa/3500mAh-M10-9d-Tws-5-1-Earphone-Touch-Control-Wireless-Earphones-Stereo-Bass-Headphone-LED-Digital-Display-Earbuds.jpg"  },
+           { url: "https://i.ibb.co/DDtw9cx/powerbank.jpg" },
+
+          ],
       "rating": {
           "rate": 4.1,
           "count": 259
