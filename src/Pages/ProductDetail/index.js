@@ -27,7 +27,7 @@ const ProductDetail = () => {
   return (
     <>
       {!loading && product?.id ? (
-        <div className="flex flex-wrap max-w-7xl mx-auto my-4">
+        <div className="flex flex-wrap max-w-7xl mx-auto my-4" >
           <div className="w-full sm:w-2/2 md:w-2/2 xl:w-5/5 p-4 flex flex-wrap">
             {/* <img alt="ecommerce" className={styles.image} src={product.image} /> */}
 
@@ -144,6 +144,7 @@ const ProductDetail = () => {
                 className={styles.productDetailText}
                 white-space="pre-line"
                 vertical-align="bottom"
+                dir="rtl"
               >
                 {product.description}
               </p>
